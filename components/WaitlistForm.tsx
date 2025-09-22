@@ -13,12 +13,21 @@ export default function WaitlistForm() {
     setIsSubmitting(true);
 
     try {
-      // Replace this with Supabase insert when backend is ready.
-      console.log('Waitlist signup:', email);
-      await new Promise((resolve) => setTimeout(resolve, 600));
-      setSubmitted(true);
+      const response = await fetch('https://formspree.io/f/xrbyzybw', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+      } else {
+        console.error('Formspree error:', await response.text());
+        alert('Something went wrong. Please try again later.');
+      }
     } catch (error) {
-      console.error('Failed to join waitlist', error);
+      console.error('Failed to join waitlist:', error);
+      alert('Network error. Please try again later.');
     } finally {
       setIsSubmitting(false);
     }
@@ -61,3 +70,4 @@ export default function WaitlistForm() {
     </form>
   );
 }
+
