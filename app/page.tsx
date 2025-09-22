@@ -13,7 +13,7 @@ const steps = [
   },
   {
     title: 'Get tailored assets',
-    description: 'Receive an optimized resume, cover letter, and project idea crafted for that role.',
+    description: 'Receive an optimized resume, ppt based cover letter, and project idea crafted for that role that will boost your chance to land interview',
     icon: '🚀',
   },
 ];
