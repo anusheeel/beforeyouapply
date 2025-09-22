@@ -82,7 +82,7 @@ export default function HomePage() {
               <ul className="mt-8 space-y-4 text-base">
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-emerald-300">✔</span>
-                  <span>ATS-aligned formatting and keywords surfaced automatically.</span>
+                  <span>ATS-aligned optimized resume.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-emerald-300">✔</span>
@@ -90,7 +90,7 @@ export default function HomePage() {
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-emerald-300">✔</span>
-                  <span>Project ideas engineered to showcase the skills hiring managers expect.</span>
+                  <span>List Project ideas engineered to showcase the skills hiring managers expect.</span>
                 </li>
               </ul>
             </div>
