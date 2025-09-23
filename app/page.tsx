@@ -16,7 +16,7 @@ const steps = [
   {
     title: 'Get your application kit',
     description:
-      'Receive a role-specific resume, a presentation-style cover letter, and a project blueprint that proves you can deliver.',
+      'A role-specific resume, a cover letter deck, and a mini-project blueprint — everything you need to apply with confidence.',
     icon: '🚀',
   },
 ];
@@ -59,17 +59,19 @@ export default function HomePage() {
               BeforeYouApply (BYA)
             </span>
             <h1 className="mt-6 text-4xl font-bold text-slate-900 sm:text-5xl">
-              Stop guessing. Start applying with confidence.
+              Stop sending generic applications.
             </h1>
             <p className="mt-4 text-lg text-slate-600 sm:text-xl">
-              BeforeYouApply is your AI copilot that transforms a generic resume into a tailored application kit — complete with an optimized resume, a cover letter deck, and a mini-project idea aligned to the role.
+              With BYA, every job gets a <span className="font-semibold">tailored application kit</span>: 
+              an optimized resume, a presentation-style cover letter, and a portfolio-ready project idea. 
+              Apply with confidence — and stand out from the crowd.
             </p>
             <WaitlistForm />
             <div className="mt-10 grid gap-6 sm:grid-cols-2">
               {steps.map((step) => (
                 <div
                   key={step.title}
-                  className="rounded-xl border border-slate-100 bg-white/80 p-5 shadow-sm shadow-indigo-50"
+                  className="rounded-xl border border-slate-100 bg-white/80 p-5 shadow-sm shadow-indigo-50 transition hover:shadow-md hover:bg-white"
                 >
                   <div className="text-3xl">{step.icon}</div>
                   <h3 className="mt-4 text-lg font-semibold text-slate-900">{step.title}</h3>
@@ -90,20 +92,22 @@ export default function HomePage() {
             <div className="relative">
               <h2 className="text-3xl font-semibold">Your AI hiring copilot</h2>
               <p className="mt-4 text-base text-indigo-100">
-                BYA doesn’t just reword your resume. It aligns your background with the role, highlights quantifiable wins, and even suggests a project idea that mirrors the job’s tech stack — so you stand out in a sea of applicants.
+                BYA doesn’t just reword your resume. It aligns your background with the role, highlights 
+                measurable wins, and even suggests a project idea that mirrors the job’s tech stack — 
+                so you become the obvious choice.
               </p>
               <ul className="mt-8 space-y-4 text-base">
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-emerald-300">✔</span>
-                  <span>ATS-ready formatting that passes keyword scans automatically.</span>
+                  <span>ATS-ready formatting that passes recruiter keyword scans.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-emerald-300">✔</span>
-                  <span>Tailored narratives that connect your achievements to the company’s goals.</span>
+                  <span>Tailored cover letter narratives that tie your story to the company’s goals.</span>
                 </li>
                 <li className="flex items-start gap-3">
                   <span className="mt-1 text-emerald-300">✔</span>
-                  <span>Portfolio-ready project ideas engineered to prove your skills in practice.</span>
+                  <span>Portfolio-ready project ideas engineered to showcase your skills in practice.</span>
                 </li>
               </ul>
             </div>
@@ -115,14 +119,14 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl">How it works</h2>
             <p className="mt-4 text-lg text-slate-600">
-              A simple 3-step flow that turns every application into a tailored submission designed to get interviews.
+              A simple 3-step flow that turns every application into a <span className="font-semibold">tailored submission designed to get interviews</span>.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-3">
             {steps.map((step, index) => (
               <div
                 key={step.title}
-                className="rounded-2xl border border-slate-100 bg-slate-50/80 p-6 shadow-sm"
+                className="rounded-2xl border border-slate-100 bg-slate-50/80 p-6 shadow-sm transition hover:shadow-md hover:bg-white"
               >
                 <div className="flex h-12 w-12 items-center justify-center rounded-full bg-indigo-100 text-2xl text-indigo-700">
                   {index + 1}
@@ -139,14 +143,14 @@ export default function HomePage() {
           <div className="max-w-3xl">
             <h2 className="text-3xl font-semibold text-slate-900 sm:text-4xl">Under the hood</h2>
             <p className="mt-4 text-lg text-slate-600">
-              BYA keeps things transparent so you know exactly how the platform elevates your application.
+              BYA keeps things transparent so you know exactly how your application kit is built.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2">
             {techHighlights.map((feature) => (
               <article
                 key={feature.title}
-                className="flex flex-col gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-md shadow-indigo-50"
+                className="flex flex-col gap-4 rounded-2xl border border-slate-100 bg-white p-6 shadow-md shadow-indigo-50 transition hover:shadow-md hover:bg-slate-50"
               >
                 <span className="text-3xl">{feature.icon}</span>
                 <div>
@@ -163,22 +167,23 @@ export default function HomePage() {
           <div className="max-w-2xl">
             <h2 className="text-3xl font-semibold sm:text-4xl">Why it matters</h2>
             <p className="mt-4 text-lg text-indigo-100">
-              Generic resumes get ignored. BYA equips you with a full, tailored application kit that proves fit, readiness, and initiative — dramatically increasing your odds of getting an interview.
+              Generic resumes get ignored. BYA equips you with a <span className="font-semibold">full, tailored application kit</span> 
+              that proves fit, readiness, and initiative — dramatically increasing your odds of landing interviews.
             </p>
             <ul className="mt-6 grid gap-4 text-base text-indigo-100 sm:grid-cols-3">
-              <li className="rounded-2xl bg-white/10 p-4">
+              <li className="rounded-2xl bg-white/10 p-4 transition hover:bg-white/20">
                 <h3 className="font-semibold text-white">ATS-optimized resume</h3>
                 <p className="mt-2 text-sm text-indigo-100">
                   Structured to surface the exact keywords recruiters are scanning for.
                 </p>
               </li>
-              <li className="rounded-2xl bg-white/10 p-4">
-                <h3 className="font-semibold text-white">Personalized cover letter deck</h3>
+              <li className="rounded-2xl bg-white/10 p-4 transition hover:bg-white/20">
+                <h3 className="font-semibold text-white">Cover letter deck</h3>
                 <p className="mt-2 text-sm text-indigo-100">
                   Visual slides rooted in your achievements and the company’s goals.
                 </p>
               </li>
-              <li className="rounded-2xl bg-white/10 p-4">
+              <li className="rounded-2xl bg-white/10 p-4 transition hover:bg-white/20">
                 <h3 className="font-semibold text-white">Portfolio-ready project</h3>
                 <p className="mt-2 text-sm text-indigo-100">
                   Showcase relevant skills with a mini build aligned to the JD’s tech stack.
